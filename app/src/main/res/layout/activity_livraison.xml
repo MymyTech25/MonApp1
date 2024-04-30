@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#668FCB"
+    tools:context=".Livraison"
+    tools:ignore="MissingClass">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-46dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/itim"
+                android:text="Sélectionnez une date de livraison"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <CalendarView
+                android:id="@+id/calendarView2"
+                android:layout_width="411dp"
+                android:layout_height="297dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="3dp"
+                android:background="#000000"
+                android:backgroundTint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewAdresse"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="91dp"
+                android:fontFamily="@font/itim"
+                android:text="Saississez une adresse de livraison"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextRue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextRue"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/itim"
+                android:hint="Numéro et nom de rue"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editTextCodePostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextRue"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/itim"
+                android:hint="Code postal"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editTextVille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextCodePostal"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/itim"
+                android:hint="Ville"
+                android:textColor="#000000" />
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapView2"
+                android:layout_width="357dp"
+                android:layout_height="220dp"
+                android:layout_below="@id/editTextVille"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="31dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRetourCart"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:text="Retour" />
+
+                <Button
+                    android:id="@+id/btnPaiement"
+                    android:layout_width="112dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Adresse" />
+
+                <Button
+                    android:id="@+id/btnFinalPaiement"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Payez" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

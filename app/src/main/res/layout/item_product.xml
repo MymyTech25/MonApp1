@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#668FCB">
+
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:background="#668FCB"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewNomProduit"
+            android:layout_width="102dp"
+            android:layout_height="109dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/itim"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewPrixProduit"
+            android:layout_width="96dp"
+            android:layout_height="107dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/itim"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageViewProduit"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
